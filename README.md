@@ -29,7 +29,8 @@ Flask Specifics:
 *code-rss.py is the main file to run
 
 *https://medium.com/faun/deploy-flask-app-with-nginx-using-gunicorn-7fda4f50066a
-
+*https://www.digitalocean.com/community/tutorials/how-to-deploy-python-wsgi-apps-using-gunicorn-http-server-behind-nginx#glossary
+*https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-20-04
 
 ```
 <p align="center">
