@@ -28,6 +28,8 @@ Flask Specifics:
     TL;DR = {{ url_for('static', filename='xxx')}}
 *code-rss.py is the main file to run
 
+*https://medium.com/faun/deploy-flask-app-with-nginx-using-gunicorn-7fda4f50066a
+
 
 ```
 <p align="center">
