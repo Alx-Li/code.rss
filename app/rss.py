@@ -60,7 +60,7 @@ def submit():
             )
 #------------------------yagmail------------------------------------------------------------------------
         #initializing the server connection for yagmail
-        mail = yagmail.SMTP( user='exec.rhs.code@gmail.com', password='BruhMoment123', host='smtp.gmail.com')
+        mail = yagmail.SMTP( user='exec.rhs.code@gmail.com', password='BruhMoment123', host='smtp.gmail.com') #should add oauth
         #sending the email
         mail.send(
             to='exec.rhs.code@gmail.com', 
