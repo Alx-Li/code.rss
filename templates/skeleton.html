@@ -10,8 +10,7 @@
 </head>
 
 <body>
-
-
+<!-- nav bar -->
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
         <img src="{{ url_for('static', filename='img/logo.png') }}">
 
@@ -41,10 +40,14 @@
             </a>
         </div>
     </div>
+    <div>
+        <h1 style="margin-left: 20%;">{{content}}</h1>
     </div>
-    <div id="particles-div"></div>
-    <div id="content" class="content">
+
+
     </div>
+        <div id="particles-div"></div>
+        <div id="content" class="content"></div>
 
     <script src="{{ url_for('static', filename='assets/js/script.js') }}"></script>
 

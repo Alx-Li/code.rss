@@ -7,7 +7,7 @@ from flask_pymongo import PyMongo
 from datetime import datetime
 import email_validator
 import yagmail
-import smtplib
+
 
 
 app = Flask(__name__,
@@ -33,11 +33,12 @@ class ContactForm(FlaskForm):
 def log_information(name, email, message, department, subtime):
     return {"name": name, "email": email, "message": message, "department": department, "submit_time": subtime}
 
+# -----------home page----------------------
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("skeleton.html")
 
-
+#----------------- contact page
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
@@ -75,7 +76,7 @@ def submit():
         form.message.data = None
         form.department.data = None
 
-        return "<h1 style = 'display:flex; text-align:center; margin:auto;'>Response Submitted</h1>"
+        return render_template("skeleton.html", content="Response Submitted")
 
 
 if __name__ == "__main__":

@@ -1,3 +1,4 @@
+/* Main body and text */
 h1 {
     color: rgb(85, 85, 85);
     font-size: 5vw;
@@ -10,8 +11,8 @@ body {
 .text {
     margin-left: 200px;
 }
-
-#particle-div {
+/* particle.js */
+#particles-div {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ body {
     left: 0;
     position: fixed;
 }
-
+/* navigation bar ----------------- */
 .sidebar {
     height: 100%;
     width: 100px;
